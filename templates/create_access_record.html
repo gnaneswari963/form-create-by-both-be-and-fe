@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #form
+        {
+            width: 400px;
+        }
+    </style>
+</head>
+<body>
+    <center>
+        <h1>create_access_record</h1>
+        <form action="" method="post" id="form">
+            {% csrf_token %}
+            <fieldset>
+                <legend>access record</legend>
+                <label for="n">name</label>
+                <input type="text" name="n" id="n"><br><br>
+                <label for="d">date</label>
+                <input type="text" name="d" id="d"><br><br>
+                <label for="a">author</label>
+                <input type="text" name="a" id="a"><br><br>
+                <input type="submit" value="create access_record">
+            </fieldset>
+        </form>
+    </center>
+</body>
+</html>
